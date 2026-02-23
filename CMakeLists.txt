@@ -5,6 +5,11 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
+if(MSVC)
+    add_compile_options(/utf-8)
+endif()
+
+
 include(FetchContent)
 
 FetchContent_Declare(
@@ -16,8 +21,8 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(pybind11)
 
 
-if(MSVC)
-    add_compile_options(/utf-8)
-endif()
+# set(Python_EXECUTABLE "${CMAKE_CURRENT_SOURCE_DIR}/.venv/Scripts/python.exe")
 
+
+# add_subdirectory(pybind11)
 pybind11_add_module(example main.cpp)

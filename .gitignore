@@ -36,3 +36,4 @@
 __pycache__
 stubs/
 pybind11/
+build/

@@ -1,0 +1,6 @@
+pybind11 == 3.0.2
+pybind11-mkdoc == 2.6.2
+pybind11_stubgen == 2.5.5
+libclang == 18.1.1
+numpy == 2.4.2
+matplotlib == 3.10.8
