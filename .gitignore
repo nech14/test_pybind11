@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+.venv
+.vscode
+__pycache__
+stubs/
+pybind11/
